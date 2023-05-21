@@ -7,5 +7,6 @@ export interface IItem {
   title: string,
   currency_code: string,
   price: string,
-  quantity: number
+  quantity: number,
+  state: string
 }
