@@ -1,6 +1,6 @@
 import { IItem } from "../interface/IItem"
 
-const Item: React.FC<IItem> = ({ item }) => {
+const Item: React.FC<IItemProps> = ({ item }) => {
   const title = item.title?.length > 50
     ? `${item.title.slice(0, 50)}...`
     : item.title  
@@ -32,3 +32,7 @@ const Item: React.FC<IItem> = ({ item }) => {
 }
 
 export default Item
+
+interface IItemProps {
+  item: IItem
+}

@@ -1,10 +1,7 @@
 import data from '../etsy.json';
-import { IItem } from '../interface/IItem';
 import Item from './Item';
 
 const Listing = () => {
-  
-
   return (
     <div className="item-list">
       {
